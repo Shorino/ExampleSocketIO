@@ -6,6 +6,10 @@ console.log('Node client started');
 
 socket.on('connect', ()=>{
     console.log('Connected with ID:', socket.id);
+
+    setInterval(()=>{
+        socket.emit('test-message', {a: 'a', b: 2});
+    }, 1000);
 });
 socket.on('disconnect', ()=>{
     console.log('Disconnected');
@@ -28,3 +32,6 @@ socket.on('error', (event)=>{
 // socket.on('reconnect_failed', (event)=>{
 //     console.log('Reconnect failed:', event);
 // });
+socket.on('test-message', data =>{
+    console.log('test-message:', data);
+});
