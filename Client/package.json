@@ -1,0 +1,14 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Example socket io client",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joel Sim",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.1.3"
+  }
+}
