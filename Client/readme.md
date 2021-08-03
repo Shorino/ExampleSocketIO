@@ -8,4 +8,4 @@ npm i socket.io-client
 npm install
 
 4. Run the server
-node client.js
+node client
